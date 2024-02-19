@@ -15,12 +15,12 @@ import static org.springframework.http.ResponseEntity.ok;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/transacoes")
-public class TransacaoController {
+@RequestMapping("/api/v1/consultas")
+public class ConsultaController {
 
     private final ConsultaService consultaService;
 
-    @GetMapping("/all")
+    @GetMapping("/todos")
     public ResponseEntity<TransacaoResponse> consultarTransacoes() throws Exception {
         log.info("inicia a consulta de transacoes");
         final var transacoes = consultaService.consultarTransacoes();
