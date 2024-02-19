@@ -1,66 +1,74 @@
 [
   {
-    "cartao": "4444123456781234",
-    "id": "100023568900001",
-    "descricao": {
-      "valor": "500.50",
-      "dataHora": "01/05/2021 18:30:00",
-      "estabelecimento": "PetShop Mundo Cão",
-      "nsu": "1234567890",
-      "codigoAutorizacao": "147258369",
-      "status": "AUTORIZADO"
-    },
-    "formaPagamento": {
-      "tipo": "AVISTA",
-      "parcelas": "1"
+    "transacao": {
+      "cartao": "4444123456781234",
+      "id": "100023568900001",
+      "descricao": {
+        "valor": "500.50",
+        "dataHora": "01/05/2021 18:30:00",
+        "estabelecimento": "PetShop Mundo Cão",
+        "nsu": "1234567890",
+        "codigoAutorizacao": "147258369",
+        "status": "AUTORIZADO"
+      },
+      "formaPagamento": {
+        "tipo": "AVISTA",
+        "parcelas": "1"
+      }
     }
   },
   {
-    "cartao": "5555123412345678",
-    "id": "100023568900002",
-    "descricao": {
-      "valor": "150.00",
-      "dataHora": "02/05/2021 14:25:00",
-      "estabelecimento": "Supermercado CompreBem",
-      "nsu": "0987654321",
-      "codigoAutorizacao": "963852741",
-      "status": "AUTORIZADO"
-    },
-    "formaPagamento": {
-      "tipo": "PARCELADO_LOJA",
-      "parcelas": "3"
+    "transacao": {
+      "cartao": "5555123412345678",
+      "id": "100023568900002",
+      "descricao": {
+        "valor": "150.00",
+        "dataHora": "02/05/2021 14:25:00",
+        "estabelecimento": "Supermercado CompreBem",
+        "nsu": "0987654321",
+        "codigoAutorizacao": "963852741",
+        "status": "AUTORIZADO"
+      },
+      "formaPagamento": {
+        "tipo": "PARCELADO_LOJA",
+        "parcelas": "3"
+      }
     }
   },
   {
-    "cartao": "6666123412341234",
-    "id": "100023568900003",
-    "descricao": {
-      "valor": "750.00",
-      "dataHora": "03/05/2021 12:10:00",
-      "estabelecimento": "Eletrônicos TechPlus",
-      "nsu": "1122334455",
-      "codigoAutorizacao": "789456123",
-      "status": "NEGADO"
-    },
-    "formaPagamento": {
-      "tipo": "PARCELADO_EMISSOR",
-      "parcelas": "5"
+    "transacao": {
+      "cartao": "6666123412341234",
+      "id": "100023568900003",
+      "descricao": {
+        "valor": "750.00",
+        "dataHora": "03/05/2021 12:10:00",
+        "estabelecimento": "Eletrônicos TechPlus",
+        "nsu": "1122334455",
+        "codigoAutorizacao": "789456123",
+        "status": "NEGADO"
+      },
+      "formaPagamento": {
+        "tipo": "PARCELADO_EMISSOR",
+        "parcelas": "5"
+      }
     }
   },
   {
-    "cartao": "7777123412345678",
-    "id": "100023568900004",
-    "descricao": {
-      "valor": "2000.00",
-      "dataHora": "04/05/2021 16:45:00",
-      "estabelecimento": "Loja de Departamentos GrandeCompra",
-      "nsu": "5566778899",
-      "codigoAutorizacao": "321654987",
-      "status": "AUTORIZADO"
-    },
-    "formaPagamento": {
-      "tipo": "AVISTA",
-      "parcelas": "1"
+    "transacao": {
+      "cartao": "7777123412345678",
+      "id": "100023568900004",
+      "descricao": {
+        "valor": "2000.00",
+        "dataHora": "04/05/2021 16:45:00",
+        "estabelecimento": "Loja de Departamentos GrandeCompra",
+        "nsu": "5566778899",
+        "codigoAutorizacao": "321654987",
+        "status": "AUTORIZADO"
+      },
+      "formaPagamento": {
+        "tipo": "AVISTA",
+        "parcelas": "1"
+      }
     }
   }
 ]

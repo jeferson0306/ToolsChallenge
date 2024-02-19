@@ -1,4 +1,6 @@
-package br.com.tools.domain;
+package br.com.tools.domain.response;
+
+import br.com.tools.domain.transacao.Transacao;
 
 import java.util.List;
 
