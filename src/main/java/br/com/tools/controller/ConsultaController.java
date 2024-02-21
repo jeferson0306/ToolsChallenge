@@ -1,6 +1,7 @@
 package br.com.tools.controller;
 
 import br.com.tools.domain.response.TransacaoResponse;
+import br.com.tools.domain.response.TransacoesResponse;
 import br.com.tools.services.ConsultaService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +22,7 @@ public class ConsultaController {
     private final ConsultaService consultaService;
 
     @GetMapping("/todos")
-    public ResponseEntity<TransacaoResponse> consultarTransacoes() throws Exception {
+    public ResponseEntity<TransacoesResponse> consultarTransacoes() throws Exception {
         log.info("inicia a consulta de transacoes");
         final var transacoes = consultaService.consultarTransacoes();
         log.info("finaliza a consulta de transacoes com o retorno: {}", transacoes);
