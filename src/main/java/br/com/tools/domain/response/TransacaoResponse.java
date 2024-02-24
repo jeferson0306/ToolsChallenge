@@ -1,10 +1,10 @@
-package br.com.tools.domain;
+package br.com.tools.domain.response;
 
-import java.util.List;
+import br.com.tools.domain.transacao.Transacao;
 
 import static java.util.Objects.requireNonNull;
 
-public record TransacaoResponse(List<Transacao> transacao) {
+public record TransacaoResponse(Transacao transacao) {
 
     public TransacaoResponse {
         requireNonNull(transacao, "O campo 'transacao' não pode ser nulo");
