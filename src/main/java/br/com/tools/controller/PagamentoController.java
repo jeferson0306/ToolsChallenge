@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-
 import static org.springframework.http.ResponseEntity.ok;
 
 @Slf4j
@@ -25,7 +22,7 @@ public class PagamentoController {
     private final PagamentoService pagamentoService;
 
     @PostMapping("/processar")
-    public ResponseEntity<PagamentoResponse> processarPagamento(@RequestBody final PagamentoDTO pagamentoDTO) throws URISyntaxException {
+    public ResponseEntity<PagamentoResponse> processarPagamento(@RequestBody final PagamentoDTO pagamentoDTO) {
         log.info("iniciando o processamento do pagamento {} para o id {}", pagamentoDTO, pagamentoDTO.transacao().id());
         final var respostaDoPagamento = pagamentoService.processarPagamento(pagamentoDTO);
         log.info("finalizando o processamento do pagamento {} para o id {}", pagamentoDTO, pagamentoDTO.transacao().id());
