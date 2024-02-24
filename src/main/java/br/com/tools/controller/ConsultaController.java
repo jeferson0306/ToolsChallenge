@@ -21,16 +21,16 @@ public class ConsultaController {
 
     private final ConsultaService consultaService;
 
-    @GetMapping("/todos")
-    public ResponseEntity<TransacoesResponse> consultarTransacoes() throws Exception {
+    @GetMapping("/transacoes")
+    public ResponseEntity<TransacoesResponse> consultarTransacoes() {
         log.info("inicia a consulta de transacoes");
         final var transacoes = consultaService.consultarTransacoes();
         log.info("finaliza a consulta de transacoes com o retorno: {}", transacoes);
         return ok(transacoes);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<TransacaoResponse> consultarTransacao(@PathVariable final String id) throws Exception {
+    @GetMapping("/transacao/{id}")
+    public ResponseEntity<TransacaoResponse> consultarTransacaoPorId(@PathVariable final String id) {
         log.info("inicia a consulta de transacao para o id {}", id);
         final var transacao = consultaService.consultarTransacaoPorId(id);
         log.info("finaliza a consulta de transacao para o id {} com o retorno: {}", id, transacao);

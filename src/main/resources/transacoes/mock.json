@@ -70,5 +70,41 @@
         "parcelas": "1"
       }
     }
+  },
+  {
+    "transacao": {
+      "cartao": "6666123412341234",
+      "id": "198023468900079",
+      "descricao": {
+        "valor": "917.14",
+        "dataHora": "20/02/2024 23:10:59",
+        "estabelecimento": "Eletrônicos TechPlus",
+        "nsu": "1122334455",
+        "codigoAutorizacao": "789857423",
+        "status": "CANCELADO"
+      },
+      "formaPagamento": {
+        "tipo": "PARCELADO_EMISSOR",
+        "parcelas": "5"
+      }
+    }
+  },
+  {
+    "transacao": {
+      "cartao": "6666123412341234",
+      "id": "198023468900081",
+      "descricao": {
+        "valor": "917.14",
+        "dataHora": "20/02/2024 23:10:59",
+        "estabelecimento": "Eletrônicos TechPlus",
+        "nsu": "1122334455",
+        "codigoAutorizacao": "783357423",
+        "status": "AUTORIZADO"
+      },
+      "formaPagamento": {
+        "tipo": "PARCELADO_EMISSOR",
+        "parcelas": "5"
+      }
+    }
   }
 ]
